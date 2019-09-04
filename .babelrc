@@ -1,0 +1,26 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    ["module-resolver", {
+      "alias": {
+        "src": "./src",
+        "application": "./src/application",
+        "config": "./src/config",
+        "db": "./src/config/db",
+        "controllers": "./src/application/controllers",
+        "middlewares": "./src/application/middlewares",
+        "repositories": "./src/application/repositories",
+        "services": "./src/application/services",
+        "libs": "./src/application/libs",
+        "helpers": "./src/application/helpers"
+      }
+    }]
+  ],
+}
